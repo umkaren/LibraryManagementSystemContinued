@@ -22,21 +22,27 @@ public class Main {
 
         // Find books by publication year
         List<Book> booksByYear = library.findBooksByPublicationYear(2011);
+        System.out.println(booksByYear);
 
         // Find books by author
         List<Book> booksByAuthor = library.booksByAuthor("Karen");
+        System.out.println(booksByAuthor);
 
         // Find the book with the most pages
         Book bookWithMostPages = library.mostPages();
+        System.out.println(bookWithMostPages);
 
         // Find books with more than a certain page count
         List<Book> booksByPageCount = library.byPageCount(100);
+        System.out.println(booksByPageCount);
 
         // Get all book titles sorted alphabetically
         List<String> sortedTitles = library.titlesSorted();
+        System.out.println(sortedTitles);
 
         // Find books by category
         List<Book> booksByCategory = library.byCategory("Fiction");
+        System.out.println(booksByCategory);
 
         // Create some users
         User user1 = new User("User 1", "123456");

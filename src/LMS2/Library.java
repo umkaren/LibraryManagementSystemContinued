@@ -12,7 +12,11 @@ class Library {
 
     public Library() {
         books = new ArrayList<>(); //initializes book list
-        users = new ArrayList<>(); //initializies user list
+        users = new ArrayList<>(); //initializes user list
+    }
+
+    public List<Book> getBooks() {
+        return books;
     }
 
     public void addBook(Book book) {

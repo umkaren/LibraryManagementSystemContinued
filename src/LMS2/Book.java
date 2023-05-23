@@ -38,9 +38,6 @@ public class Book {
         return category;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
 
     public boolean isOnLoan() {
         return isOnLoan;
@@ -49,6 +46,7 @@ public class Book {
     public void setOnLoan(boolean onLoan) {
         isOnLoan = onLoan;
     }
+
 
     @Override
     public String toString() {
